@@ -9,7 +9,7 @@
 - **Problema:** acompanhar níveis de açudes e consultar seu histórico em um cenário de estiagem.
 - **Aplicação:** cadastro de reservatórios, registro de medições, consulta de níveis críticos e monitoramento de mudanças.
 - **Banco escolhido:** RethinkDB 2.4, modelo de documentos.
-- **Equipe:** preencher com os nomes dos integrantes antes da entrega.
+- **Equipe:** Kauã Lopes // Rafael Lima // Vitor Miguel
 - **Tecnologias:** Java 17, Maven, driver Java do RethinkDB e Docker Compose.
 
 ### Texto para registrar a equipe
