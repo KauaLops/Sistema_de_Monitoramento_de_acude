@@ -1,0 +1,6 @@
+target/
+.vscode/
+.idea/
+*.log
+.env
+backup-acudes.json
