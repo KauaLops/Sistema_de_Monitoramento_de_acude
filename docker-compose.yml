@@ -1,0 +1,23 @@
+services:
+  rethink1:
+    image: rethinkdb:2.4
+    container_name: rethink1
+    command: rethinkdb --bind all --server-name no1
+    ports:
+      - "28015:28015"
+      - "8080:8080"
+    volumes:
+      - rdb1:/data
+
+  rethink2:
+    image: rethinkdb:2.4
+    container_name: rethink2
+    command: rethinkdb --bind all --server-name no2 --join rethink1:29015
+    depends_on:
+      - rethink1
+    volumes:
+      - rdb2:/data
+
+volumes:
+  rdb1:
+  rdb2:
